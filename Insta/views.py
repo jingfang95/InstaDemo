@@ -12,9 +12,6 @@ from Insta.models import Post
 
 # Create your views here.
 
-class HelloDjango(TemplateView):
-    template_name = 'home.html'
-
 class PostView(LoginRequiredMixin, ListView):
     model = Post
     template_name = 'posts.html'
